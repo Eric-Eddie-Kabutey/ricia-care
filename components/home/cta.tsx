@@ -6,17 +6,21 @@ import { Button } from "@/components/ui/button";
 
 const Cta: FC = () => {
   return (
+    // This section provides the vertical spacing above and below the component
     <section className="bg-white py-20 md:py-28">
-      <div className="container mx-auto px-4 md:px-0 h-16 lg:max-w-5xl xl:max-w-6xl">
+      {/* 
+        This is the container. It will now automatically grow to fit its content.
+        I've removed the h-16 and redundant max-width classes.
+      */}
+      <div className="container mx-auto px-4 lg:max-w-5xl xl:max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 50, scale: 0.95 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-          // --- The background gradient is the key here ---
-                  className="relative text-white rounded-3xl p-12 md:p-20 lg:p-24 flex flex-col items-center text-center 
-          bg-[radial-gradient(ellipse_at_top,_#34765A,_#052e16,_black)]
-                      overflow-hidden"
+          className="relative text-white rounded-3xl p-12 md:p-20 lg:p-24 flex flex-col items-center text-center 
+                     bg-[radial-gradient(ellipse_at_top,_#34765A,_#052e16,_black)]
+                     overflow-hidden"
         >
           {/* Main Content */}
           <div className="relative z-10 flex flex-col items-center">
