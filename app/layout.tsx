@@ -4,6 +4,15 @@ import "./globals.css";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 
+import { Bricolage_Grotesque } from 'next/font/google';
+
+// Configure the font
+const bricolageGrotesque = Bricolage_Grotesque({
+  subsets: ['latin'],
+  display: 'swap', // Optional: improves loading performance
+  variable: '--font-bricolage', // Optional: for CSS variables
+});
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${bricolageGrotesque.className} antialiased`}
       >
         <Header />
         {children}
