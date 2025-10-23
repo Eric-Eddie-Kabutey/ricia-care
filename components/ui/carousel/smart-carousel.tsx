@@ -64,7 +64,7 @@ const SmartCarousel: FC<SmartCarouselProps> = ({ slides }) => {
                   : "w-full md:w-1/3"
               )}
             >
-              <div className="aspect-[3/4]">
+              <div className="aspect-[3/4] h-68">
                 <Image
                   src={slide.src}
                   alt={slide.alt}
