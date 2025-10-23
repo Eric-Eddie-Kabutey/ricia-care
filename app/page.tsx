@@ -2,12 +2,16 @@ import Cta from "@/components/home/cta";
 import Faq from "@/components/home/faq";
 import Hero from "@/components/home/hero";
 import MobileAppCta from "@/components/home/mobile-app-cta";
+import ServicesShowcase from "@/components/home/service-showcase";
 import Testimonials from "@/components/home/testimonial";
 
 export default function Home() {
   return (<>
     {/* Hero section */}
     <Hero />
+
+    {/* Service Showcase */}
+    <ServicesShowcase />
 
     {/* Mobile App cta */}
     <MobileAppCta />    
