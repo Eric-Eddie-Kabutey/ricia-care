@@ -13,7 +13,7 @@ const Hero: FC = () => {
       initial="hidden"
       animate="visible"
       variants={{ hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.2 } } }}
-      className="relative bg-gradient-to-br from-[#34765A] via-[#FFFFFF] to-[#FFFFFF] py-20 md:py-28 overflow-hidden"
+      className="relative bg-emerald-50 py-20 md:py-28 overflow-hidden"
     >
       {/* --- Background Vectors --- */}
       <motion.div
